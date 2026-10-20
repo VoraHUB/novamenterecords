@@ -598,7 +598,6 @@ function initHero(revealed) {
   gsap.set('.hero__tag', { opacity: 0, letterSpacing: '.6em' });
   gsap.set(words, { scale: 2.6, opacity: 0, filter: 'blur(12px)' });
   gsap.set('.hero__cta', { scale: 0, opacity: 0 });
-  gsap.set('.hero__scroll', { opacity: 0 });
   gsap.set('#site-header', { yPercent: -100 });
   gsap.set(media, { scale: 1.25, filter: 'brightness(2.2) saturate(1.4)' });
   root.classList.add('hero-ready');
@@ -626,8 +625,7 @@ function initHero(revealed) {
         { color: '#ffffff', textShadow: '0 0 30px rgba(249,184,74,1), 0 0 70px rgba(224,43,208,.85)' },
         { color: '#F9B84A', textShadow: '0 0 0 rgba(249,184,74,0), 0 0 0 rgba(224,43,208,0)', duration: 1.3, ease: 'power2.out', clearProps: 'color,textShadow' }, '<')
       .to('.hero__cta', { scale: 1, opacity: 1, duration: 1.1, ease: 'elastic.out(1, .45)', clearProps: 'transform' }, '-=1.1')
-      .to('#site-header', { yPercent: 0, duration: .9, clearProps: 'transform' }, '-=1')
-      .to('.hero__scroll', { opacity: 1, duration: .6 }, '-=.6');
+      .to('#site-header', { yPercent: 0, duration: .9, clearProps: 'transform' }, '-=1');
   });
 }
 

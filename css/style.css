@@ -515,20 +515,6 @@ strong { color: var(--text); font-weight: 800; }
 .hero__title .word { display: inline-block; white-space: nowrap; }
 .hero__title .char { display: inline-block; will-change: transform; }
 .hero__title .word--accent { color: var(--yellow); }
-.hero__scroll {
-  position: absolute; z-index: 1; left: 50%; bottom: 26px; transform: translateX(-50%);
-  width: 28px; height: 46px; border: 2px solid rgba(255, 255, 255, .55); border-radius: 20px;
-}
-.hero__scroll span {
-  position: absolute; left: 50%; top: 8px; width: 4px; height: 9px; margin-left: -2px;
-  background: var(--yellow); border-radius: 2px;
-  animation: scrollDot 1.6s ease-in-out infinite;
-}
-@keyframes scrollDot {
-  0% { transform: translateY(0); opacity: 1; }
-  70% { transform: translateY(16px); opacity: 0; }
-  100% { opacity: 0; }
-}
 
 /* ---------- 8c. Bem-vindo (Início): o final do antigo paredão, conduzido pela rolagem ---------- */
 .welcome { display: none; }
